@@ -25,5 +25,3 @@ dfLineas['Clase']=dfLineas['Clase'].astype('category')
 niveles=dfLineas['Nivel de tensión (kV)'].cat.categories
 
 dNiv={nivel:dfLineas[dfLineas['Nivel de tensión (kV)'] == nivel].describe() for nivel in niveles}
-
-
